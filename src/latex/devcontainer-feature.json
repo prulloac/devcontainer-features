@@ -1,0 +1,17 @@
+{
+    "name": "LaTeX Workshop",
+    "id": "latex",
+    "version": "1.0.0",
+    "description": "A feature to compile LaTeX document alongside LaTeX Workshop extension",
+    "options": {},
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "James-Yu.latex-workshop"
+            ]
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
