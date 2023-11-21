@@ -1,15 +1,13 @@
 
-# My Favorite Color (color)
+# LaTeX Workshop (latex)
 
-A feature to remind you of your favorite color
+A feature to compile LaTeX document alongside LaTeX Workshop extension
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/feature-starter/color:1": {
-        "version": "latest"
-    }
+    "ghcr.io/prulloac/devcontainer-features/latex:1": {}
 }
 ```
 
@@ -17,10 +15,16 @@ A feature to remind you of your favorite color
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| favorite | Choose your favorite color. | string | red |
+
+
+## Customizations
+
+### VS Code Extensions
+
+- `James-Yu.latex-workshop`
 
 
 
 ---
 
-_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/devcontainers/feature-starter/blob/main/src/color/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
+_Note: This file was auto-generated from the [devcontainer-feature.json](https://github.com/prulloac/devcontainer-features/blob/main/src/latex/devcontainer-feature.json).  Add additional notes to a `NOTES.md`._
