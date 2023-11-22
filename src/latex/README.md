@@ -15,7 +15,7 @@ A feature to compile LaTeX document alongside LaTeX Workshop extension
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-
+| lightweight | Gives the option to either make a full TeX Live install or a lightweight install with TinyTex | boolean | true |
 
 ## Customizations
 
