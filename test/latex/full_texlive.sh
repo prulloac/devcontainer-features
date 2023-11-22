@@ -42,7 +42,7 @@ source dev-container-features-test-lib
 # check <LABEL> <cmd> [args...]
 check "validate latex installation" latex --version | grep 'TeX Live'
 check "validate tlmgr installation" tlmgr --version | grep 'TeX Live'
-check "validate symlink points to TinyTex" which latex | xargs readlink -f | grep 'TinyTeX'
+check "validate symlink points to TinyTex" which latex | xargs readlink -f | grep 'texlive'
 
 # Report result
 # If any of the checks above exited with a non-zero exit code, the test will fail.

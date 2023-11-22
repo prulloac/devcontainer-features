@@ -1,2 +1,10 @@
 {
+    "full_texlive": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "latex": {
+                "lightweight": false
+            }
+        }
+    }
 }

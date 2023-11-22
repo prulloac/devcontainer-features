@@ -3,7 +3,13 @@
     "id": "latex",
     "version": "1.0.0",
     "description": "A feature to compile LaTeX document alongside LaTeX Workshop extension",
-    "options": {},
+    "options": {
+        "lightweight": {
+            "type": "boolean",
+            "default": true,
+            "description": "Gives the option to either make a full TeX Live install or a lightweight install with TinyTex"
+        }
+    },
     "customizations": {
         "vscode": {
             "extensions": [
