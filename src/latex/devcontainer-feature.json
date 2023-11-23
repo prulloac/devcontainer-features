@@ -1,7 +1,7 @@
 {
     "name": "LaTeX Workshop",
     "id": "latex",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Installs Tex Live latex compiler with tlmgr package manager, alongside LaTeX Workshop extension",
     "options": {
         "scheme": {

@@ -12,4 +12,6 @@ wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz # or cu
 zcat < install-tl-unx.tar.gz | tar xf -
 cd $(ls -d */ | grep install-tl-)
 perl ./install-tl --no-interaction --scheme=$SCHEME
-echo "PATH=\$PATH:$(ls -d /usr/local/texlive/* | grep 20)/bin/x86_64-linux" >> /etc/profile
+TEXLIVE_DIR=$(ls -d /usr/local/texlive/* | grep 20)
+TEXLIVE_EXECUTABLES_DIR="$(ls -d $TEXLIVE_DIR/bin/*)"
+echo "PATH=\$PATH:$TEXLIVE_EXECUTABLES_DIR" >> /etc/profile
