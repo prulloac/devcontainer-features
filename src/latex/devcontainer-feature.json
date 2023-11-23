@@ -2,7 +2,7 @@
     "name": "LaTeX Workshop",
     "id": "latex",
     "version": "1.0.0",
-    "description": "A feature to compile LaTeX document alongside LaTeX Workshop extension",
+    "description": "Installs Tex Live latex compiler with tlmgr package manager, alongside LaTeX Workshop extension",
     "options": {
         "lightweight": {
             "type": "boolean",
