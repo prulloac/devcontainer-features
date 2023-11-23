@@ -1,7 +1,7 @@
 
 # LaTeX Workshop (latex)
 
-A feature to compile LaTeX document alongside LaTeX Workshop extension
+Installs Tex Live latex compiler with tlmgr package manager, alongside LaTeX Workshop extension
 
 ## Example Usage
 
