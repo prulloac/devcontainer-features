@@ -15,7 +15,7 @@ Installs Tex Live latex compiler with tlmgr package manager, alongside LaTeX Wor
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| scheme | Gives the option select which scheme is used to install Tex Live. See https://www.tug.org/texlive/doc/texlive-en/texlive-en.html#x1-340003.4.2 for more information. | string | medium |
+| scheme | Gives the option select which scheme is used to install Tex Live. See https://www.tug.org/texlive/doc/texlive-en/texlive-en.html#x1-340003.4.2 for more information. | string | basic |
 
 ## Customizations
 
