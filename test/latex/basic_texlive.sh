@@ -40,6 +40,8 @@ source dev-container-features-test-lib
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib. Syntax is...
 # check <LABEL> <cmd> [args...]
+echo $PATH
+cat /etc/environment
 check "validate latex installation" latex --version | grep 'TeX Live'
 check "validate tlmgr installation" tlmgr --version | grep 'TeX Live'
 

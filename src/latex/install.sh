@@ -18,4 +18,5 @@ TEXLIVE_EXECUTABLES_DIR="$(ls -d $TEXLIVE_DIR/bin/*)"
 
 chmod -R 755 $TEXLIVE_DIR
 
-echo "export PATH=\$PATH:$TEXLIVE_EXECUTABLES_DIR" >> /etc/profile.d/latex-env.sh
+echo "PATH=\"\$PATH:$TEXLIVE_EXECUTABLES_DIR\"" >> /etc/environment
+ls $TEXLIVE_EXECUTABLES_DIR | xargs -I % ln -s $TEXLIVE_EXECUTABLES_DIR/% /usr/local/bin/%
