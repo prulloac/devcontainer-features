@@ -1,12 +1,4 @@
 {
-    "medium_texlive": {
-        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-        "features": {
-            "latex": {
-                "scheme": "medium"
-            }
-        }
-    },
     "basic_texlive": {
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {

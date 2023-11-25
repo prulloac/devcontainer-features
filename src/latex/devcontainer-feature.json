@@ -1,7 +1,7 @@
 {
     "name": "LaTeX Workshop",
     "id": "latex",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "description": "Installs Tex Live latex compiler with tlmgr package manager, alongside LaTeX Workshop extension",
     "options": {
         "scheme": {
@@ -13,7 +13,7 @@
                 "basic",
                 "minimal"
             ],
-            "default": "basic",
+            "default": "full",
             "description": "Gives the option select which scheme is used to install Tex Live. See https://www.tug.org/texlive/doc/texlive-en/texlive-en.html#x1-340003.4.2 for more information."
         }
     },
@@ -26,6 +26,5 @@
     },
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils"
-    ],
-    "containerEnv": {}
+    ]
 }

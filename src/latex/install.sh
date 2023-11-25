@@ -2,7 +2,7 @@
 set -e
 
 
-SCHEME=${SCHEME:-"basic"}
+SCHEME=${SCHEME:-"full"}
 
 apt update
 apt install -y wget perl-modules libfontconfig1 fontconfig
