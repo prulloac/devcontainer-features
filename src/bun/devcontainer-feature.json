@@ -1,0 +1,23 @@
+{
+    "name": "Bun (via npm)",
+    "id": "bun",
+    "version": "1.0.0",
+    "description": "Installs Bun (Javascript runtime written in zig)",
+    "options": {
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dbaeumer.vscode-eslint"
+            ]
+        }
+    },
+    "containerEnv": {
+        "NVM_DIR": "/usr/local/share/nvm",
+        "NVM_SYMLINK_CURRENT": "true",
+        "PATH": "/usr/local/share/nvm/current/bin:${PATH}"
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

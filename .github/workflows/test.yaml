@@ -13,7 +13,7 @@ jobs:
     strategy:
       matrix:
         features:
-          - latex
+          - bun
         baseImage:
           - debian:latest
           - ubuntu:latest
@@ -33,7 +33,7 @@ jobs:
     strategy:
       matrix:
         features:
-          - latex
+          - bun
     steps:
       - uses: actions/checkout@v3
 
