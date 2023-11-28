@@ -16,7 +16,9 @@ This repository is structured to support the development of Dev Container featur
 
 ## Current Features
 
-- **LaTeX**: A Dev Container feature to build LaTeX projects, integrated with a VSCode extension for enhanced functionality.
+- **Bun**: [bun](https://bun.sh/) Javascript runtime written in zig, installed via node
+- **Deno**:  [Deno](https://deno.com/) Javascript runtime written in rust
+- **LaTeX**: [TeX Live](https://www.tug.org/texlive/) installation with both latex and tlmgr runtimes, integrated with a VSCode extension for enhanced functionality.
 
 ## Development and Testing
 
