@@ -2,8 +2,13 @@
     "name": "Bun (via npm)",
     "id": "bun",
     "version": "1.0.0",
-    "description": "Installs Bun (Javascript runtime written in zig)",
+    "description": "Installs Bun via npm (Javascript runtime written in zig)",
     "options": {
+        "version": {
+            "type": "string",
+            "default": "latest",
+            "description": "Version of Bun to install"
+        }
     },
     "customizations": {
         "vscode": {
@@ -18,6 +23,7 @@
         "PATH": "/usr/local/share/nvm/current/bin:${PATH}"
     },
     "installsAfter": [
-        "ghcr.io/devcontainers/features/common-utils"
+        "ghcr.io/devcontainers/features/common-utils",
+        "ghcr.io/devcontainers/features/node"
     ]
 }
