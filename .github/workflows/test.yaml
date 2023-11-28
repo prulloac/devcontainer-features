@@ -13,7 +13,7 @@ jobs:
     strategy:
       matrix:
         features:
-          - latex
+          - bun
         baseImage:
           - debian:latest
           - ubuntu:latest
