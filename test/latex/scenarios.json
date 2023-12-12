@@ -7,5 +7,15 @@
             }
         },
         "remoteUser": "vscode"
+    },
+    "minimal_texlive": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "latex": {
+                "scheme": "minimal",
+                "packages": "chktex"
+            }
+        },
+        "remoteUser": "vscode"
     }
 }

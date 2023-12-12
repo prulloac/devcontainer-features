@@ -41,9 +41,10 @@ source dev-container-features-test-lib
 # The 'check' command comes from the dev-container-features-test-lib. Syntax is...
 # check <LABEL> <cmd> [args...]
 
-check "validate latex installation" latex --version | grep 'TeX Live'
 check "validate tlmgr installation" tlmgr --version | grep 'TeX Live'
+check "validate latex installation" latex --version | grep 'TeX Live'
 check "validate latexmk installation" latexmk -v | grep 'Latexmk'
+check "validate chktex installation" chktex --version | grep 'chktex'
 
 # Report result
 # If any of the checks above exited with a non-zero exit code, the test will fail.
