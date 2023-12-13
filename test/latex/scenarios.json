@@ -1,9 +1,18 @@
 {
-    "basic_texlive": {
+    "minimal_texlive": {
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
             "latex": {
-                "scheme": "basic"
+                "scheme": "minimal"
+            }
+        },
+        "remoteUser": "vscode"
+    },
+    "additional_packages": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "latex": {
+                "packages": "chktex, babel-german babel-french"
             }
         },
         "remoteUser": "vscode"
