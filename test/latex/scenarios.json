@@ -1,19 +1,18 @@
 {
-    "basic_texlive": {
-        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-        "features": {
-            "latex": {
-                "scheme": "basic"
-            }
-        },
-        "remoteUser": "vscode"
-    },
     "minimal_texlive": {
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
             "latex": {
-                "scheme": "minimal",
-                "packages": "chktex"
+                "scheme": "minimal"
+            }
+        },
+        "remoteUser": "vscode"
+    },
+    "additional_packages": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "latex": {
+                "packages": "chktex, babel-german babel-french"
             }
         },
         "remoteUser": "vscode"
