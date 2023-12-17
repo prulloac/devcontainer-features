@@ -13,6 +13,5 @@
     },
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils"
-    ],
-    "entrypoint": "sh entrypoint.sh"
+    ]
 }
