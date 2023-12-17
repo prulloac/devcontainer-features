@@ -1,0 +1,17 @@
+{
+    "name": "pre-commit (via Homebrew)",
+    "id": "pre-commit",
+    "version": "1.0.0",
+    "description": "Installs pre-commit via Homebrew",
+    "documentationURL": "https://github.com/prulloac/devcontainer-features/tree/main/src/pre-commit",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": "latest",
+            "description": "Version to install"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
