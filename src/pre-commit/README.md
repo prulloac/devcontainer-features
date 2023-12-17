@@ -1,7 +1,7 @@
 
-# pre-commit (via Homebrew) (pre-commit)
+# pre-commit (via pipx) (pre-commit)
 
-Installs pre-commit via Homebrew
+Installs pre-commit via pipx
 
 ## Example Usage
 
