@@ -1,8 +1,8 @@
 {
-    "name": "pre-commit (via Homebrew)",
+    "name": "pre-commit (via pipx)",
     "id": "pre-commit",
-    "version": "1.0.0",
-    "description": "Installs pre-commit via Homebrew",
+    "version": "1.0.1",
+    "description": "Installs pre-commit via pipx",
     "documentationURL": "https://github.com/prulloac/devcontainer-features/tree/main/src/pre-commit",
     "options": {
         "version": {
@@ -13,5 +13,6 @@
     },
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils"
-    ]
+    ],
+    "entrypoint": "sh entrypoint.sh"
 }

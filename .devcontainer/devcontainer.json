@@ -24,7 +24,8 @@
         "ghcr.io/devcontainers/features/docker-in-docker:2": {},
         "ghcr.io/devcontainers/features/common-utils:2": {
             "configureZshAsDefaultShell": true
-        }
+        }//,
+        //"ghcr.io/prulloac/devcontainer-features/pre-commit:1": {}          
     },
     "remoteUser": "node",
     "updateContentCommand": "npm install -g @devcontainers/cli"

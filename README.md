@@ -19,6 +19,7 @@ This repository is structured to support the development of Dev Container featur
 - **Bun**: [bun](https://bun.sh/) Javascript runtime written in zig, installed via node
 - **Deno**:  [Deno](https://deno.com/) Javascript runtime written in rust
 - **LaTeX**: [TeX Live](https://www.tug.org/texlive/) installation with both latex and tlmgr runtimes, integrated with a VSCode extension for enhanced functionality.
+- **pre-commit**: [pre-commit](https://pre-commit.com/) framework for managing and maintaining multi-language pre-commit hooks in a single repository.
 
 ## Development and Testing
 
