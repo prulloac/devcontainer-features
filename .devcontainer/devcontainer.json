@@ -13,16 +13,18 @@
                 ]
             },
             "extensions": [
-				"mads-hartmann.bash-ide-vscode",
-				"GitHub.copilot",
-				"GitHub.copilot-chat",
-				"GitHub.copilot-labs"
-			]
+                "mads-hartmann.bash-ide-vscode",
+                "GitHub.copilot",
+                "GitHub.copilot-chat",
+                "github.vscode-github-actions"
+            ]
         }
     },
     "features": {
         "ghcr.io/devcontainers/features/docker-in-docker:2": {},
-        "ghcr.io/devcontainers/features/common-utils:2": {}
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "configureZshAsDefaultShell": true
+        }
     },
     "remoteUser": "node",
     "updateContentCommand": "npm install -g @devcontainers/cli"

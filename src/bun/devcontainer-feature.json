@@ -3,6 +3,7 @@
     "id": "bun",
     "version": "1.0.0",
     "description": "Installs Bun via npm (Javascript runtime written in zig)",
+    "documentationURL": "https://github.com/prulloac/devcontainer-features/tree/main/src/bun",
     "options": {
         "version": {
             "type": "string",

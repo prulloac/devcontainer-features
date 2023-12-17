@@ -3,6 +3,7 @@
     "id": "deno",
     "version": "1.0.0",
     "description": "Installs Deno (Javascript runtime written in rust)",
+    "documentationURL": "https://github.com/prulloac/devcontainer-features/tree/main/src/deno",
     "options": {
         "version": {
             "type": "string",
