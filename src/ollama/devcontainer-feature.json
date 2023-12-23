@@ -5,11 +5,6 @@
     "description": "Installs ollama",
     "documentationURL": "https://github.com/prulloac/devcontainer-features/tree/main/src/ollama",
     "options": {
-        "serve": {
-            "type": "boolean",
-            "default": true,
-            "description": "Whether to serve ollama"
-        },
         "pull": {
             "type":"string",
             "default": "",
