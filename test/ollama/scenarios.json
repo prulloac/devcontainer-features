@@ -1,0 +1,12 @@
+{
+    "serve_and_pull": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "ollama": {
+                "serve": true,
+                "pull": "phi"
+            }
+        },
+        "remoteUser": "vscode"
+    }
+}

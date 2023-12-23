@@ -20,6 +20,7 @@ jobs:
           - deno
           - latex
           - pre-commit
+          - ollama
         baseImage:
           - debian:latest
           - ubuntu:latest

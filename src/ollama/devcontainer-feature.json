@@ -1,0 +1,23 @@
+{
+    "name": "ollama",
+    "id": "ollama",
+    "version": "1.0.0",
+    "description": "Installs ollama",
+    "documentationURL": "https://github.com/prulloac/devcontainer-features/tree/main/src/ollama",
+    "options": {
+        "serve": {
+            "type": "boolean",
+            "default": true,
+            "description": "Whether to serve ollama"
+        },
+        "pull": {
+            "type":"string",
+            "default": "",
+            "description": "comma separated list of models to pull"
+        }
+    },
+    "entrypoint": "ollama serve",
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}
