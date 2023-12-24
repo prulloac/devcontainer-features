@@ -21,6 +21,7 @@ jobs:
           - latex
           - pre-commit
           - ollama
+          - gitlint
         baseImage:
           - debian:latest
           - ubuntu:latest
@@ -44,6 +45,7 @@ jobs:
           - deno
           - latex
           - pre-commit
+          - gitlint
     steps:
       - uses: actions/checkout@v3
 
