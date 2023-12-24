@@ -1,0 +1,11 @@
+{
+    "gitlint_pre_commit_hook": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "pre-commit": {},
+            "gitlint": {}
+        },
+        "remoteUser": "vscode",
+        "postStartCommand": "git init && pre-commit install --hook-type commit-msg"
+    }
+}
