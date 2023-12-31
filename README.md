@@ -18,9 +18,10 @@ This repository is structured to support the development of Dev Container featur
 
 - **Bun**: [bun](https://bun.sh/) Javascript runtime written in zig, installed via node
 - **Deno**:  [Deno](https://deno.com/) Javascript runtime written in rust
+- **gitlint**: [gitlint](https://jorisroovers.com/gitlint/) git commit messages linter CLI tool
 - **LaTeX**: [TeX Live](https://www.tug.org/texlive/) installation with both latex and tlmgr runtimes, integrated with a VSCode extension for enhanced functionality.
-- **pre-commit**: [pre-commit](https://pre-commit.com/) framework for managing and maintaining multi-language pre-commit hooks in a single repository.
 - **ollama**: [ollama](https://ollama.ai/) Run AI models locally with ollama's CLI.
+- **pre-commit**: [pre-commit](https://pre-commit.com/) framework for managing and maintaining multi-language pre-commit hooks in a single repository.
 
 ## Development and Testing
 
