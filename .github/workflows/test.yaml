@@ -17,11 +17,12 @@ jobs:
       matrix:
         features:
           - bun
+          - chezmoi
           - deno
-          - latex
-          - pre-commit
-          - ollama
           - gitlint
+          - latex
+          - ollama
+          - pre-commit
         baseImage:
           - debian:latest
           - ubuntu:latest
@@ -42,10 +43,11 @@ jobs:
       matrix:
         features:
           - bun
+          - chezmoi
           - deno
           - latex
-          - pre-commit
           - gitlint
+          - pre-commit
     steps:
       - uses: actions/checkout@v3
 
