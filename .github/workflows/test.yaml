@@ -18,9 +18,9 @@ jobs:
         features:
           - bun
           - chezmoi
+          - commitizen
           - deno
           - gitlint
-          - latex
           - ollama
           - pre-commit
         baseImage:
@@ -44,8 +44,8 @@ jobs:
         features:
           - bun
           - chezmoi
+          - commitizen
           - deno
-          - latex
           - gitlint
           - pre-commit
     steps:
