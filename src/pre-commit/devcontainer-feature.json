@@ -1,7 +1,7 @@
 {
     "name": "pre-commit (via pipx)",
     "id": "pre-commit",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Installs pre-commit via pipx",
     "documentationURL": "https://github.com/prulloac/devcontainer-features/tree/main/src/pre-commit",
     "options": {
