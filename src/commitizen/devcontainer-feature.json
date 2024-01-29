@@ -1,0 +1,17 @@
+{
+    "name": "commitizen (via pipx)",
+    "id": "commitizen",
+    "version": "1.0.0",
+    "description": "Installs commitizen cli.",
+    "documentationURL": "https://github.com/prulloac/devcontainer-features/tree/main/src/commitizen",
+    "options": {
+        "version": {
+            "type":"string",
+            "default": "latest",
+            "description": "commitizen version to install"
+        }    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils",
+        "ghcr.io/devcontainers/python"
+    ]
+}
