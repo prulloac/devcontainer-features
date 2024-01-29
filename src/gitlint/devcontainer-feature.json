@@ -1,7 +1,7 @@
 {
     "name": "gitlint (via pipx)",
     "id": "gitlint",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Installs gitlint via pipx",
     "documentationURL": "https://github.com/prulloac/devcontainer-features/tree/main/src/gitlint",
     "options": {

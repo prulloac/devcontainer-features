@@ -22,11 +22,25 @@
         }
     },
     "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {
+            "installDockerBuildx": true,
+            "version": "latest",
+            "dockerDashComposeVersion": "v2"
+        },
         "ghcr.io/devcontainers/features/common-utils:2": {
-            "configureZshAsDefaultShell": true
-        }//,
-        //"ghcr.io/prulloac/devcontainer-features/pre-commit:1": {}          
+            "installZsh": true,
+            "configureZshAsDefaultShell": true,
+            "installOhMyZsh": true,
+            "installOhMyZshConfig": true,
+            "upgradePackages": true,
+            "username": "automatic",
+            "userUid": "automatic",
+            "userGid": "automatic"
+        },
+        "ghcr.io/devcontainers/features/python:1": {
+            "installTools": true,
+            "version": "latest"
+        }
     },
     "remoteUser": "node",
     "updateContentCommand": "npm install -g npm@latest && npm install -g @devcontainers/cli"
