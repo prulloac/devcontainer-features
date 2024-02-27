@@ -21,6 +21,15 @@
             "type": "string",
             "default": "",
             "description": "Comma separated list of packages to install with tlmgr. See https://www.tug.org/texlive/doc/tlmgr.html#installing-packages for more information."
+        },
+        "mirror": {
+            "type": "string",
+            "default": "https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz",
+            "description": "Provide a custom mirror to use for the installation of Tex Live. Omit option to automatically select the mirror closest to you.",
+            "proposals": [
+                "https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz",
+                "https://mirrors.mit.edu/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz"
+            ]
         }
     },
     "customizations": {
