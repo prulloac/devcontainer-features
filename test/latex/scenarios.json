@@ -16,5 +16,15 @@
             }
         },
         "remoteUser": "vscode"
+    },
+    "custom_mirror": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "latex": {
+                "scheme": "minimal",
+                "mirror": "https://mirrors.mit.edu/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz"
+            }
+        },
+        "remoteUser": "vscode"
     }
 }
