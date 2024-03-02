@@ -1,7 +1,7 @@
 
-# Bun (via npm) (bun)
+# Bun (bun)
 
-Installs Bun via npm (Javascript runtime written in zig)
+Installs Bun (Javascript runtime written in zig)
 
 ## Example Usage
 
@@ -15,7 +15,7 @@ Installs Bun via npm (Javascript runtime written in zig)
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Version of Bun to install | string | latest |
+
 
 ## Customizations
 
