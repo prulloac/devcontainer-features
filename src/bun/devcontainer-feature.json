@@ -1,10 +1,14 @@
 {
     "name": "Bun",
     "id": "bun",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "description": "Installs Bun (Javascript runtime written in zig)",
     "documentationURL": "https://github.com/prulloac/devcontainer-features/tree/main/src/bun",
     "options": {
+        "useNpm": {
+            "type": "boolean",
+            "default": false
+        }
     },
     "customizations": {
         "vscode": {
@@ -14,6 +18,9 @@
         }
     },
     "containerEnv": {
+        "NVM_DIR": "/usr/local/share/nvm",
+        "NVM_SYMLINK_CURRENT": "true",
+        "PATH": "/usr/local/share/nvm/current/bin:${PATH}"
     },
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils"
