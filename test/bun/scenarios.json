@@ -1,0 +1,31 @@
+{
+    "use_npm": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "bun": {
+                "useNpm": true
+            }
+        },
+        "remoteUser": "vscode"
+    },
+    "npm_zsh_devcontainer": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "bun": {
+                "useNpm": true
+            },
+            "ghcr.io/devcontainers/features/common-utils:2": {
+                "installZsh": true,
+                "configureZshAsDefaultShell": true,
+                "installOhMyZsh": true,
+                "installOhMyZshConfig": true,
+                "upgradePackages": true,
+                "username": "automatic",
+                "userUid": "automatic",
+                "userGid": "automatic"
+            }
+        },
+        "remoteUser": "vscode",
+        "updateContentCommand": "npm install -g @devcontainers/cli"
+    }
+}
