@@ -42,7 +42,7 @@ else
 		devcontainer-feature \
 		"ghcr.io/devcontainers/features/node:1"
 
-	npm install --global bun@$BUN_VERSION
+	npm install --global bun
 
 	echo '# bun' >> /etc/bash.bashrc
 	echo 'export BUN_INSTALL="$HOME/.bun"' >> /etc/bash.bashrc
