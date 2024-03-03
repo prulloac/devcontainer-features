@@ -1,7 +1,7 @@
 {
     "name": "Bun",
     "id": "bun",
-    "version": "1.1.1",
+    "version": "1.1.2",
     "description": "Installs Bun (Javascript runtime written in zig)",
     "documentationURL": "https://github.com/prulloac/devcontainer-features/tree/main/src/bun",
     "options": {
