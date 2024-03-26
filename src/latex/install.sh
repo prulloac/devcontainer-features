@@ -4,7 +4,7 @@ set -e
 
 SCHEME=${SCHEME:-"basic"}
 PACKAGES=${PACKAGES:-""}
-MIRROR=${MIRROR:-"https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz"}
+MIRROR=${MIRROR:-"https://mirror.ctan.org/systems/texlive/tlnet/"}
 
 check_packages() {
 	if ! dpkg -s "$@" >/dev/null 2>&1; then
@@ -19,10 +19,10 @@ check_packages() {
 check_packages ca-certificates perl wget perl-modules libfontconfig1 fontconfig
 
 cd /tmp # working directory of your choice
-wget "$MIRROR" # or curl instead of wget
+wget "${MIRROR}/install-tl-unx.tar.gz" # or curl instead of wget
 zcat < install-tl-unx.tar.gz | tar xf -
 cd $(ls -d */ | grep install-tl-)
-perl ./install-tl --no-interaction --scheme=$SCHEME
+perl ./install-tl --no-interaction --scheme=$SCHEME --location $MIRROR
 
 TEXLIVE_DIR=$(ls -d /usr/local/texlive/* | grep 20)
 TEXLIVE_EXECUTABLES_DIR="$(ls -d $TEXLIVE_DIR/bin/*)"
