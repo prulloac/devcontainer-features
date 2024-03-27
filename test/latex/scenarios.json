@@ -22,7 +22,7 @@
         "features": {
             "latex": {
                 "scheme": "minimal",
-                "mirror": "https://mirrors.mit.edu/CTAN/systems/texlive/tlnet/install-tl-unx.tar.gz"
+                "mirror": "https://mirrors.mit.edu/CTAN/systems/texlive/tlnet/"
             }
         },
         "remoteUser": "vscode"
