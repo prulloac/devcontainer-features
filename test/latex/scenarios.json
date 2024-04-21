@@ -26,5 +26,25 @@
             }
         },
         "remoteUser": "vscode"
+    },
+    "issue_43": {
+        "image": "mcr.microsoft.com/devcontainers/base:bullseye",
+        
+        "features": {
+            "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
+                "version": "latest",
+                "installChromium": true
+            },
+            "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
+                "packages": "chromium"
+            }, 
+            "ghcr.io/devcontainers-contrib/features/pandoc:1": {
+                "version": "latest"
+            }, 
+            "latex": {
+                "scheme": "basic",
+                "mirror": "https://ctan.dcc.uchile.cl/systems/texlive/tlnet/"
+            }
+        }
     }
 }

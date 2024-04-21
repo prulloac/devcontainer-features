@@ -36,7 +36,6 @@ echo $PACKAGES | tr ',' '\n' | xargs -I % sh -c "$TEXLIVE_EXECUTABLES_DIR/tlmgr 
 
 chmod -R 777 /usr/local/texlive/
 
-echo "PATH=\"\$PATH:$TEXLIVE_EXECUTABLES_DIR\"" >> /etc/environment
 ls $TEXLIVE_EXECUTABLES_DIR | xargs -I % ln -s $TEXLIVE_EXECUTABLES_DIR/% /usr/local/bin/%
 
 # cleanup
