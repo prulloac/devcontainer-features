@@ -20,12 +20,19 @@ check_packages ca-certificates curl
 
 curl https://ollama.ai/install.sh | sh
 
-# if PULL is not empty and not equal to "none", also ollama is serving, then pull the models
-if [ "$PULL" != "none" ] && [ "$PULL" != "" ]; then
-    # split PULL variable into array using comma as delimiter and then pass to ollama pull
-    ollama serve &
-    sleep 3
-    echo $PULL | tr ',' '\n' | xargs -I % sh -c "ollama pull %"
-fi
+# Make sure it can run
+ollama --version
+
+# Save requested models for later. They can't be installed now because the user may be incorrect.
+mkdir -p "/usr/local/share/ollama"
+echo "$PULL" | tr ',' '\n' > "/usr/local/share/ollama/models.txt"
+cat << "EOF" > "/usr/local/share/ollama/init.sh"
+#!/bin/sh
+set -e
+echo "Pulling models" 1>&2
+# Ollama should already be running
+cat /usr/local/share/ollama/models.txt | xargs -I % sh -c "ollama pull %"
+EOF
+chmod +x "/usr/local/share/ollama/init.sh"
 
 echo 'Done!'
