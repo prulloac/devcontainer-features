@@ -16,7 +16,7 @@ check_packages() {
 	fi
 }
 
-check_packages ca-certificates perl wget perl-modules libfontconfig1 fontconfig
+check_packages ca-certificates perl wget perl-modules libfontconfig1 fontconfig libfile-homedir-perl libyaml-tiny-perl
 
 cd /tmp # working directory of your choice
 wget "${MIRROR}/install-tl-unx.tar.gz" # or curl instead of wget
