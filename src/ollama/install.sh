@@ -18,7 +18,7 @@ check_packages() {
 # make sure we have curl
 check_packages ca-certificates curl
 
-curl https://ollama.ai/install.sh | sh
+curl -fsSL https://ollama.com/install.sh | sh
 
 # if PULL is not empty and not equal to "none", also ollama is serving, then pull the models
 if [ "$PULL" != "none" ] && [ "$PULL" != "" ]; then
