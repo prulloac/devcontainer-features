@@ -1,7 +1,7 @@
 {
     "name": "ollama",
     "id": "ollama",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Installs ollama",
     "documentationURL": "https://github.com/prulloac/devcontainer-features/tree/main/src/ollama",
     "options": {
