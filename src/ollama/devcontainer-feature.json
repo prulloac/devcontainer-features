@@ -1,16 +1,18 @@
 {
     "name": "ollama",
     "id": "ollama",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Installs ollama",
     "documentationURL": "https://github.com/prulloac/devcontainer-features/tree/main/src/ollama",
     "options": {
         "pull": {
-            "type":"string",
+            "type": "string",
             "default": "",
-            "description": "comma separated list of models to pull"
+            "description": "Comma-separated list of models to pull",
+            "proposals": ["llama3.2", "llama3.2:3b,nomic-embed-text"]
         }
     },
+    "onCreateCommand": "/usr/local/share/ollama/init.sh",
     "entrypoint": "ollama serve",
     "installsAfter": [
         "ghcr.io/devcontainers/features/common-utils"
