@@ -40,7 +40,9 @@ source dev-container-features-test-lib
 # Feature-specific tests
 # The 'check' command comes from the dev-container-features-test-lib. Syntax is...
 # check <LABEL> <cmd> [args...]
-check "validate ollama installation" ollama --version | grep '1'
+echo "Running ollama tests - debug"
+
+check "validate ollama installation" ollama -v | grep 'ollama version is'
 check "validate if ollama process is running" ollama list
 
 # Report result

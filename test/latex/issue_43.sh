@@ -50,7 +50,7 @@ cat <<"EOF" >/tmp/test.qmd
 title: Test
 format:
   gfm:
-    mermaid-format: png
+    mermaid-format: gfm
 ---
 
 ```{mermaid}
