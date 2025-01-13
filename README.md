@@ -1,3 +1,5 @@
+[![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/prulloac/devcontainer-features.git)
+
 # devcontainer-features
 
 Welcome to `devcontainer-features`, a repository dedicated to the development and testing of new features for development containers (Dev Containers). This repository is designed to streamline the process of developing and testing Dev Container features, both locally and remotely using VSCode and GitHub CodeSpaces.
