@@ -1,0 +1,30 @@
+{
+    "name": "Lua",
+    "id": "lua",
+    "version": "1.0.0",
+    "description": "Installs Lua",
+    "documentationURL": "https://github.com/prulloac/devcontainer-features/tree/main/src/lua",
+    "options": {
+        "version": {
+            "type": "string",
+            "default": "5.4.7"
+        },
+        "useApt": {
+            "type": "boolean",
+            "default": false
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "sumneko.lua"
+            ]
+        }
+    },
+    "containerEnv": {
+        "PATH": "/usr/local/share/nvm/current/bin:${PATH}"
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

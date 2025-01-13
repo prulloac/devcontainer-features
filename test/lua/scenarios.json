@@ -1,0 +1,11 @@
+{
+    "use_apt": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "lua": {
+                "useApt": true
+            }
+        },
+        "remoteUser": "vscode"
+    }
+}
