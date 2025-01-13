@@ -21,9 +21,10 @@ jobs:
           - commitizen
           - deno
           - gitlint
+          - latex
+          - lua
           - ollama
           - pre-commit
-          - latex
         baseImage:
           - debian:latest
           - ubuntu:latest
@@ -48,8 +49,10 @@ jobs:
           - commitizen
           - deno
           - gitlint
-          - pre-commit
           - latex
+          - lua
+          - ollama
+          - pre-commit
     steps:
       - uses: actions/checkout@v4
 
