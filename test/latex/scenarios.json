@@ -38,7 +38,7 @@
             "ghcr.io/rocker-org/devcontainer-features/apt-packages:1": {
                 "packages": "chromium"
             }, 
-            "ghcr.io/devcontainers-contrib/features/pandoc:1": {
+            "ghcr.io/devcontainers-extra/features/pandoc:1": {
                 "version": "latest"
             }, 
             "latex": {
