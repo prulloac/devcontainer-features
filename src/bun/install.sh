@@ -23,13 +23,14 @@ if [ "${USE_NPM}" = "false" ]; then
 	curl -fsSL https://bun.sh/install | bash 
 
 	echo '# bun' >> /etc/bash.bashrc
-	echo 'export BUN_INSTALL="$HOME/.bun"' >> /etc/bash.bashrc
+	echo 'export BUN_INSTALL=/usr/local' >> /etc/bash.bashrc
 	echo 'export PATH=$BUN_INSTALL/bin:$PATH' >> /etc/bash.bashrc
 
 	if [ -x "$(command -v zsh)" ]; then
-		echo '# bun' >> /home/$_REMOTE_USER/.zshenv
-		echo 'export BUN_INSTALL="$HOME/.bun"' >> /home/$_REMOTE_USER/.zshenv
-		echo 'export PATH=$BUN_INSTALL/bin:$PATH' >> /home/$_REMOTE_USER/.zshenv
+		touch $_REMOTE_HOME/.zshenv
+		echo '# bun' >> $_REMOTE_HOME/.zshenv
+		echo 'export BUN_INSTALL=/usr/local' >> $_REMOTE_HOME/.zshenv
+		echo 'export PATH=$BUN_INSTALL/bin:$PATH' >> $_REMOTE_HOME/.zshenv
 	fi
 
 else
@@ -45,12 +46,15 @@ else
 	npm install --global bun
 
 	echo '# bun' >> /etc/bash.bashrc
-	echo 'export BUN_INSTALL="$HOME/.bun"' >> /etc/bash.bashrc
+	echo 'export BUN_INSTALL=/usr/local' >> /etc/bash.bashrc
 	echo 'export PATH=$BUN_INSTALL/bin:$PATH' >> /etc/bash.bashrc
 
-	echo '# bun' >> /home/$_REMOTE_USER/.zshenv
-	echo 'export BUN_INSTALL="$HOME/.bun"' >> /home/$_REMOTE_USER/.zshenv
-	echo 'export PATH=$BUN_INSTALL/bin:$PATH' >> /home/$_REMOTE_USER/.zshenv
+	if [ -x "$(command -v zsh)" ]; then
+		touch $_REMOTE_HOME/.zshenv
+		echo '# bun' >> $_REMOTE_HOME/.zshenv
+		echo 'export BUN_INSTALL=/usr/local' >> $_REMOTE_HOME/.zshenv
+		echo 'export PATH=$BUN_INSTALL/bin:$PATH' >> $_REMOTE_HOME/.zshenv
+	fi
 
 fi
 
