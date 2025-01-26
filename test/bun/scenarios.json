@@ -27,5 +27,23 @@
         },
         "remoteUser": "vscode",
         "updateContentCommand": "npm install -g @devcontainers/cli"
+    },
+    "issue_46": {
+        "name": "issue_46",
+        "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+        "features": {
+            "bun": {}
+        },
+        "remoteUser": "root"
+    },
+    "issue_46_beta": {
+        "name": "issue_46 with useNpm",
+        "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+        "features": {
+            "bun": {
+                "useNpm": true
+            }
+        },
+        "remoteUser": "root"
     }
 }
