@@ -45,5 +45,24 @@
             }
         },
         "remoteUser": "root"
+    },
+    "install_specific_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "bun": {
+                "version": "1.0.0"
+            }
+        },
+        "remoteUser": "vscode"
+    },
+    "install_specific_version_npm": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "bun": {
+                "useNpm": true,
+                "version": "1.0.0"
+            }
+        },
+        "remoteUser": "vscode"
     }
 }

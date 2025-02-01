@@ -3,6 +3,7 @@
 set -e
 
 USE_NPM="${USENPM:-"false"}"
+VERSION="${VERSION:-"latest"}"
 
 
 if [ "${USE_NPM}" = "false" ]; then
@@ -20,8 +21,12 @@ if [ "${USE_NPM}" = "false" ]; then
 	check_packages ca-certificates curl unzip
 
 	export BUN_INSTALL=/usr/local
-	curl -fsSL https://bun.sh/install | bash 
-
+	if [ "${VERSION}" = "latest" ]; then
+		curl -fsSL https://bun.sh/install | bash 
+	else 
+		curl -fsSL https://bun.sh/install | bash -s "bun-v${VERSION}"	
+	fi
+	
 	echo '# bun' >> /etc/bash.bashrc
 	echo 'export BUN_INSTALL=/usr/local' >> /etc/bash.bashrc
 	echo 'export PATH=$BUN_INSTALL/bin:$PATH' >> /etc/bash.bashrc
@@ -43,7 +48,11 @@ else
 		devcontainer-feature \
 		"ghcr.io/devcontainers/features/node:1"
 
-	npm install --global bun
+	if [ "${VERSION}" = "latest" ]; then
+		npm install --global bun
+	else
+		npm install --global bun@${VERSION}
+	fi
 
 	echo '# bun' >> /etc/bash.bashrc
 	echo 'export BUN_INSTALL=/usr/local' >> /etc/bash.bashrc
