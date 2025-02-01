@@ -15,6 +15,7 @@ Installs Bun (Javascript runtime written in zig)
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
+| version | - | string | latest |
 | useNpm | - | boolean | false |
 
 ## Customizations
